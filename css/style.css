@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn__violet {
+  color: #ffffff;
+  background-color: #b61984;
+  border-color: #b61984;
+  padding: 8px 25px;
+  border-radius: 20px;
+  border: 1px solid #b61984;
+}
+
+.listStyle__sidebar {
+  margin: 10px 0;
+}
+.listStyle__sidebar li {
+  text-align: center;
+  list-style: none;
+  padding: 13px 26px;
+}
+.listStyle__sidebar li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 13px;
+}
+
+#wrapper__Tabula {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+#wrapper__Tabula #wrapper__siderbar {
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 100vh;
+  margin-left: -300px;
+}
+#wrapper__Tabula #wrapper__siderbar.activeSidebar {
+  margin-left: 0;
+}
+@media (min-width: 1200px) {
+  #wrapper__Tabula #wrapper__siderbar.activeSidebar {
+    margin-left: -300px;
+  }
+}
+#wrapper__Tabula #content__Tabula {
+  width: 100%;
+}
+#wrapper__Tabula #content__Tabula #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#header {
+  width: 100%;
+  background-color: transparent;
+}
+#header .sticky {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.5);
+}
+#header .sticky #brand__header {
+  display: none;
+}
+#header .sticky .navbar__menu .menu__tabula li {
+  margin: 0 25px;
+}
+#header .sticky .navbar__menu .menu__tabula li::after {
+  bottom: -25px;
+}
+#header .nav__header {
+  display: flex;
+  justify-content: space-between;
+}
+#header .nav__header .navbar__brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .nav__header .navbar__brand img {
+  width: 80px;
+}
+#header .navbar__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .navbar__menu .menu__tabula {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+#header .navbar__menu .menu__tabula li {
+  margin: 25px;
+  list-style: none;
+  transition: all 0.5s;
+  text-align: center;
+  position: relative;
+}
+#header .navbar__menu .menu__tabula li a {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+#header .navbar__menu .menu__tabula li:hover a {
+  color: #b61984;
+}
+#header .navbar__menu .menu__tabula li:hover::after {
+  display: block;
+}
+#header .navbar__menu .menu__tabula li.active::after {
+  display: block;
+}
+#header .navbar__menu .menu__tabula li::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  margin-left: -4px;
+  background-color: #b61984;
+  display: none;
+  border-radius: 50%;
+}
+#header .navbar__menu .navbar__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .navbar__menu .navbar__contact .navbar__phone {
+  margin: 6px;
+  border: 1px solid #b61984;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+#header .navbar__menu .navbar__contact .navbar__phone a {
+  text-decoration: none;
+}
+#header .navbar__menu .navbar__contact .navbar__phone a i {
+  color: #ffffff;
+}
+#header .navbar__menu .navbar__contact .navbar__phone a span {
+  font-size: 13px;
+  color: white;
+}
+#header .navbar__menu .navbar__contact .navbar__phone:hover {
+  background-color: #ffffff;
+}
+#header .navbar__menu .navbar__contact .navbar__phone:hover i {
+  color: #b61984;
+}
+#header .navbar__menu .navbar__contact .navbar__phone:hover span {
+  color: #b61984;
+}
+#header .navbar__menu .navbar__contact .navbar__social i {
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: all 0.5s;
+}
+#header .navbar__menu .navbar__contact .navbar__social i:hover {
+  color: #b61984;
+}
+@media (max-width: 1200px) {
+  #header {
+    display: none;
+  }
+}
+
+#headerdiff {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: #ffffff;
+  width: 100%;
+}
+#headerdiff .wrapper__headerdiff {
+  display: flex;
+  align-items: center;
+}
+#headerdiff .wrapper__headerdiff .inconBar_Tabula {
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+#headerdiff .wrapper__headerdiff .inconBar_Tabula:hover {
+  color: #b61984;
+}
+#headerdiff .wrapper__headerdiff .inconBar_Tabula:hover i {
+  font-size: 42px;
+}
+#headerdiff .wrapper__headerdiff i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 36px;
+  margin: 10px;
+}
+#headerdiff .wrapper__headerdiff img {
+  width: 48px;
+}
+@media (max-width: 1200px) {
+  #headerdiff {
+    display: block;
+  }
+}
+
+#sidebar__tabula {
+  text-align: center;
+  padding: 0 30px;
+  background-color: #ffffff;
+  position: relative;
+}
+#sidebar__tabula #closeSidebar {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+#sidebar__tabula .navbar__brand {
+  margin-bottom: 25px;
+}
+#sidebar__tabula .menu__tabula li {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+#sidebar__tabula .menu__tabula li:hover a {
+  color: #b61984;
+}
+#sidebar__tabula .navbar__contact {
+  padding: 26px 0;
+}
+#sidebar__tabula .navbar__contact .navbar__phone {
+  width: 200px;
+  margin: 1rem auto 0 auto;
+}
+#sidebar__tabula .navbar__contact .navbar__phone a {
+  font-size: 13px;
+  color: #ffffff;
+  text-decoration: none;
+}
+#sidebar__tabula .navbar__contact .navbar__phone:hover {
+  background-color: #ffffff;
+}
+#sidebar__tabula .navbar__contact .navbar__phone:hover a {
+  color: #b61984;
+}
+#sidebar__tabula .navbar__contact .navbar__social {
+  cursor: pointer;
+  margin-top: 5px;
+}
+#sidebar__tabula .navbar__contact .navbar__social i {
+  margin-right: 0.5rem;
+}
+#sidebar__tabula .navbar__contact .navbar__social i:hover {
+  color: #b61984;
+}/*# sourceMappingURL=style.css.map */

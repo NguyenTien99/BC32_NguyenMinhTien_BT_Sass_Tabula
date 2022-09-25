@@ -1,0 +1,3 @@
+.listStyle__sidebar{
+    @include listStyle(10px,0,13px,26px,$color-black,$fs-small);
+}

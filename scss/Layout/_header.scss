@@ -1,0 +1,206 @@
+#header{
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    background-color: transparent;
+    
+    .sticky{
+        background-color: $color-white;
+        box-shadow: 0 0 10px 0 rgb(204 204 204 / 50%);
+
+        #brand__header{
+            display: none;
+        }
+        .navbar__menu{
+            .menu__tabula{
+                li{
+                    margin: 0 25px;
+                    &::after{
+                        bottom: -25px;
+                    }
+                }
+                
+            }
+        }
+        
+    }
+    .nav__header{
+        display: flex;
+        justify-content: space-between;
+
+        .navbar__brand{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img{
+                width: 80px;
+            }
+
+        }
+    }
+
+    .navbar__menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .menu__tabula{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            
+
+            li{
+                margin: 25px;
+                list-style: none;
+                transition: all 0.5s;
+                text-align: center;
+                position: relative;
+                a{
+                    color: $color-black;
+                    font-size: $fs-small;
+                    font-weight: $fw-Bold;
+                    text-decoration: none;
+                }
+
+                &:hover{
+
+                    a{
+                        color: $color-violet-fandango;
+                    }
+
+                    &::after{
+                        display: block;
+                    }
+
+                }
+                &.active{
+                    &::after{
+                        display: block;
+                    }
+                }
+                &::after{
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    left: 50%;
+                    bottom: -30px;
+                    margin-left: -4px;
+                    background-color: $color-violet-fandango;
+                    display: none;
+                    border-radius: 50%;
+                }
+            }
+
+
+        }
+
+        .navbar__contact{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .navbar__phone{
+                margin: 6px;
+                border: 1px solid $color-violet-fandango;
+                transition: all 0.5s;
+                cursor: pointer;
+                a{
+                    text-decoration: none;
+                    i{
+                        color: $color-white;
+                        
+                    }
+                    span{
+                        font-size: $fs-small;
+                        color: white;
+                    }
+                }
+                &:hover{
+                    background-color: $color-white;
+                    
+                    i{
+                        color: $color-violet-fandango;
+                        
+                    }
+                    span{
+                        color: $color-violet-fandango;
+                    }
+                }
+                
+            }
+
+            .navbar__social{
+                    
+                i{
+                    display: inline-block;
+                    font-size: $fs-small;
+                    cursor: pointer;
+                    margin: 0 5px;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: $color-violet-fandango;
+                    }
+                }
+                
+            }
+
+        }
+
+    }
+    @media (max-width:1200px) {
+        display: none;
+    }
+
+}
+
+// HeaderDiff
+#headerdiff{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: $color-white;
+    width: 100%;
+
+    .wrapper__headerdiff{
+        display: flex;
+        align-items: center;
+
+        .inconBar_Tabula{
+            display: inline-block;
+            transition: all .5s;
+            cursor: pointer;
+            &:hover{
+                color: $color-violet-fandango;
+    
+                i{
+                    font-size: $fs-x-large;
+                }
+            }
+    
+        }
+    
+        i{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            font-size: $fs-large;
+            margin: 10px;
+        }
+    
+        img{
+            width: 48px;
+        }
+        
+    }
+    @media (max-width:1200px) {
+        display: block
+    }
+    
+}

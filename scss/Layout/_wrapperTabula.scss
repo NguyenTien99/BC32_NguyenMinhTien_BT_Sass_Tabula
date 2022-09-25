@@ -1,0 +1,36 @@
+#wrapper__Tabula {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+
+  #wrapper__siderbar {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 100vh;
+    margin-left: -300px;
+    // position: relative;
+    // z-index: 1;
+    
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    &.activeSidebar {
+      margin-left: 0;
+    }
+    @media (min-width: 1200px) {
+      &.activeSidebar {
+        margin-left: -300px;
+      }
+    }
+  }
+
+  #content__Tabula {
+    width: 100%;
+
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+  }
+}

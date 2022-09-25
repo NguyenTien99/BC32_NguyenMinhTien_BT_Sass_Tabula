@@ -1,0 +1,7 @@
+//Đinh nghĩa các button
+.btn__violet{
+    @include btnStyle($color-white,$color-violet-fandango,8px,25px,20px);
+};
+
+
+
