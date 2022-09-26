@@ -1,0 +1,52 @@
+#porter__tabula{
+    padding: 4rem 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    
+    background-image: url(../../image/yellow_top_wave_01.png);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    
+    &::after{
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: -1;
+        background-image: url(../../image/Violet_top_left_wave.png);
+        background-position: bottom left;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+
+    .porter__content{
+        align-items: center;
+
+        .title__porter{
+            p{
+                color: $color-violet-fandango;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+            h1{
+                font-weight: 700;
+                font-size: $fs-xx-large;
+                line-height: 1.2;
+                @media (max-width:1200px) {
+                    font-size: $fs-x-large;
+                }
+            }
+        }
+
+        .img__porter{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

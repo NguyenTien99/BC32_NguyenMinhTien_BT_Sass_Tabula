@@ -1,0 +1,55 @@
+#footerTabula{
+    padding: 8rem 0;
+    background-color: #aa017e;
+
+    background-image: url(../../image/footer_background.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    .footer__content{
+        padding: 0 20px;
+        li{
+            list-style: none;
+            color: white;
+            font-size: 13.5px;
+        }
+        h4{
+            color: white;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .footer__contact{
+            padding-bottom: 50px;
+            .footer__info{
+                li{
+                    padding: 5px;
+                }
+            }
+            .footer__social{
+                color: white;
+                i{
+                    font-size: 13.5px;
+                    padding-right: 10px ;
+                    cursor: pointer;
+                    transition: all .5s;
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        .footer__item{
+            padding-bottom: 50px;
+            li{
+                padding: 10px 0;
+                border-bottom: 1px solid #990171;
+                width: 30%;
+                
+            }
+        }
+        
+        
+    }
+}

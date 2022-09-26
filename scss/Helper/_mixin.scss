@@ -1,10 +1,11 @@
 @mixin btnStyle($color,$bg-color,$py,$px,$border-radius) {
     color: $color;
     background-color: $bg-color;
-    border-color: $bg-color;
+    // border-color: $bg-color;
     padding: $py $px;
     border-radius: $border-radius;
     border: 1px solid $bg-color;
+
 };
 
 @mixin listStyle($my,$mx,$py,$px,$color-text,$font-size){

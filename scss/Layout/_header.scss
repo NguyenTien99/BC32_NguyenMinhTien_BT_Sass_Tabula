@@ -1,14 +1,16 @@
 #header{
-    // position: fixed;
-    // top: 0;
-    // left: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
     width: 100%;
     background-color: transparent;
     
     .sticky{
+        width: 100%;
         background-color: $color-white;
         box-shadow: 0 0 10px 0 rgb(204 204 204 / 50%);
-
+        
         #brand__header{
             display: none;
         }
@@ -162,6 +164,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 100;
     display: none;
     background-color: $color-white;
     width: 100%;

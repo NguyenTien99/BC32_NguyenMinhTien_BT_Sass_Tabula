@@ -19,7 +19,7 @@ document.querySelector("#closeSidebar").onclick = () => {
 // Scroll navbar header
 window.addEventListener("scroll", ()=>{
     const elmSticky = document.getElementById("sticky")
-    console.log(window.innerWidth)
+    
     if(window.pageYOffset > 0){
         elmSticky.classList.add('sticky');
     }else{

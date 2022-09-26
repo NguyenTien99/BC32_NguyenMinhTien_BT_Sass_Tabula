@@ -3,5 +3,36 @@
     @include btnStyle($color-white,$color-violet-fandango,8px,25px,20px);
 };
 
+.btn__send{
+    @include btnStyle($color-white,$color-violet-fandango,10px,50px,30px);
+    transition: all .5s;
+    &:hover{
+        color: $color-violet-fandango;
+        background-color: $color-white;
+    }
+};
+
+.btn__email{
+    @include btnStyle($color-white,$color-violet-fandango,15px,50px,50px);
+    width: 100%;
+    font-size: 13.5px;
+    line-height: 2;
+    border-color:rgba(255,255,255,.1);
+}
+
+.btn__Sub{
+    @include btnStyle($color-black,$color-white,15px,50px,50px);
+    width: 100%;
+    font-size: 13.5px;
+    font-weight: 600;
+    transition: all .5s;
+    letter-spacing: 1px;
+    line-height: 2;
+    &:hover{
+        color: $color-white;
+        background-color: $color-violet-fandango;
+    }
+}
+
 
 
